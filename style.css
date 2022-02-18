@@ -6,35 +6,26 @@ h1 {
   text-align: center;
 }
 
+.color {
+  display: inline-block;
+  width: 5px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 5px;
+}
+
 #color1 {
-  display: inline-block;
   background-color: black;
-  width: 5px;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 5px;
 }
+
 #color2 {
-  display: inline-block;
   background-color: red;
-  width: 5px;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 5px;
 }
+
 #color3 {
-  display: inline-block;
   background-color: green;
-  width: 5px;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 5px;
 }
+
 #color4 {
-  display: inline-block;
   background-color: blue;
-  width: 5px;
-  border: 1px solid black;
-  padding: 20px;
-  margin: 5px;
 }

@@ -18,7 +18,7 @@ elementH1.id = 'title';
 document.body.appendChild(elementH1);
 
 
-// 2 - Cria div que vai receber as divs com as paletas de cores.
+// 2 e 3- Cria div que vai receber as divs com as paletas de cores.
 let classOfColors = 'color';
 let divOfPalette = document.createElement('div');
 divOfPalette.id = 'color-palette';
@@ -43,6 +43,12 @@ let divPalette4 = document.createElement('div');
 divPalette4.className = classOfColors;
 divPalette4.id = 'color4';
 divOfPalette.appendChild(divPalette4);
+
+// 4 - Cria quadro de pixel, pixels dentro do quadro, classes e id.
+
+// let divPixelBoard = document.createElement('div');
+// divPixelBoard.id = 'pixel-board';
+// document.body.appendChild(divPixelBoard);
 
 
 // //12
