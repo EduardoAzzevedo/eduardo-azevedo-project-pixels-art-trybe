@@ -2,7 +2,12 @@ h1 {
   text-align: center;
   margin: 80px;
 }
+
 #color-palette {
+  text-align: center;
+}
+
+#pixel-board {
   text-align: center;
 }
 
