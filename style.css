@@ -7,10 +7,6 @@ h1 {
   text-align: center;
 }
 
-#pixel-board {
-  text-align: center;
-}
-
 .color {
   display: inline-block;
   width: 5px;
@@ -34,3 +30,18 @@ h1 {
 #color4 {
   background-color: blue;
 }
+
+#pixel-board {
+  text-align: center;
+  line-height: 0;
+}
+
+.pixel {
+  height: 5px;
+  width: 5px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+}
+

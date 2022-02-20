@@ -1,56 +1,21 @@
-// <!-- <main>
-// <header>
-//   <h1 id="title">Paleta de Cores</h1>
-// </header>
-// <div id="color-palette">
-//  <div id="black" class="color"></div>
-//  <div id="color1" class="color"></div>
-//  <div id="color2" class="color"></div>
-//  <div id="color3" class="color"></div>
-// </div>
-// </main> -->
-
-// 1 - Cria uma tag "h1" com um id "title".
-const elementH1 = document.createElement('h1');
-elementH1.innerText = 'Paleta de Cores';
-elementH1.id = 'title';
-document.body.appendChild(elementH1);
-
-// 2 e 3- Cria div que vai receber as divs com as paletas de cores.
-// usando For posso fazer dois arrays aqui com o nome da div e o nome da classe e concatenar os dois.
-const classOfColors = 'color';
-const divOfPalette = document.createElement('div');
-divOfPalette.id = 'color-palette';
-document.body.appendChild(divOfPalette);
-
-const divPalette1 = document.createElement('div');
-divPalette1.className = classOfColors;
-divPalette1.id = 'color1';
-divOfPalette.appendChild(divPalette1);
-
-const divPalette2 = document.createElement('div');
-divPalette2.className = classOfColors;
-divPalette2.id = 'color2';
-divOfPalette.appendChild(divPalette2);
-
-const divPalette3 = document.createElement('div');
-divPalette3.className = classOfColors;
-divPalette3.id = 'color3';
-divOfPalette.appendChild(divPalette3);
-
-const divPalette4 = document.createElement('div');
-divPalette4.className = classOfColors;
-divPalette4.id = 'color4';
-divOfPalette.appendChild(divPalette4);
-
 // 4 - Cria quadro de pixel, pixels dentro do quadro, classes e id.
 //posso tentar usar uma function que será usada dentro de outra function para definir
 //quantos quadrados serão criados(quantos divs serão criados com createElement)
-const divPixelBoard = document.createElement('div');
-divPixelBoard.id = 'pixel-board';
-document.body.appendChild(divPixelBoard);
-
-
+function createBoard(){
+let n = 5
+  for (let index = 0; index < n; index += 1) {
+    let pixelBoard = document.getElementById('pixel-board');
+    let pixelParent = document.createElement('section');
+    pixelBoard.appendChild(pixelParent);
+    for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  
+    let pixel = document.createElement('div');
+    pixel.classList = 'pixel';
+    pixelBoard.appendChild(pixel);
+    };
+  }
+};
+createBoard();
 // //12
 // function createRandomColor() {
 //   let first3Numbers = Math.floor(Math.random() * 255);
