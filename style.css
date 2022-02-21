@@ -1,6 +1,10 @@
+main {
+  text-align: center;
+}
+
 h1 {
   text-align: center;
-  margin: 80px;
+  margin: 50px;
 }
 
 #color-palette {
@@ -9,7 +13,8 @@ h1 {
 
 .color {
   display: inline-block;
-  width: 5px;
+  width: 30px;
+  height: 30px;
   border: 1px solid black;
   padding: 20px;
   margin: 5px;
@@ -31,14 +36,20 @@ h1 {
   background-color: blue;
 }
 
+#clear-button {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 7px;
+}
+
 #pixel-board {
   text-align: center;
   line-height: 0;
 }
 
 .pixel {
-  height: 5px;
-  width: 5px;
+  height: 40px;
+  width: 40px;
   padding: 20px;
   background-color: white;
   border: 1px solid black;
